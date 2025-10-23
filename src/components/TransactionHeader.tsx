@@ -7,7 +7,7 @@ export const TransactionHeader = () => {
   return (
     <>
         <div className="d-flex flex-wrap align-items-end px-4 neutral rounded">
-          <img src="/../public/wallet.png" alt="icon wallet for transaction header"
+          <img src="wallet.png" alt="icon wallet for transaction header"
           className="w-25 w-md-40" style={{maxWidth : 100}}/>
           <h2 className="mx-2 text-light title">Tu Balance:<strong><br />
           $ { balance }</strong></h2>
@@ -29,4 +29,5 @@ export const TransactionHeader = () => {
     </>
   )
 }
+
 

@@ -4,16 +4,17 @@ import '../index.css';
 
 export const TransactionHeader = () => {
     const { balance , income, expense} = useExpenseState();
+    console.log(`${import.meta.env.BASE_URL + 'wallet.png'}`)
   return (
     <>
         <div className="d-flex flex-wrap align-items-end px-4 neutral rounded">
-          <img src={`${import.meta.env.BASE_URL + 'wallet.png'}`} alt="icon wallet for transaction header"
+          <img src={`${import.meta.env.BASE_URL + 'wallet.png'}`} alt="icon wallet"
           className="w-25 w-md-40" style={{maxWidth : 100}}/>
           <h2 className="mx-2 text-light title">Tu Balance:<strong><br />
           $ { balance }</strong></h2>
         </div>
 
-        <div className="d-flex flex-wrap justify-content-around m-2">
+        <div className="d-flex flex-wrap justify-content-initial justify-content-md-around m-2">
           <div className="d-flex">
               <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><rect width="24" height="24" stroke="none" fill="#000000" opacity="0" /><g transform="matrix(1.11 0 0 1.11 12 12)">
               <path style={{stroke: "none", strokeWidth: 1, strokeDasharray: "none", strokeLinecap: "butt", strokeDashoffset: 0, strokeLinejoin: "miter", strokeMiterlimit: 4, fill: "rgba(0, 134, 40, 1)", fillRule: "nonzero", opacity: 1}} transform="translate(-12, -12)" d="M 12 7 L 3 13 L 3 17 L 12 11 L 21 17 L 21 13 L 12 7 z" strokeLinecap="round" /></g></svg>
